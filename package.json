@@ -1,0 +1,23 @@
+{
+  "name": "quickstart",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun --hot run src/index.ts",
+    "db:migrate": "bunx prisma migrate dev --name init",
+    "db:generate": "bunx prisma generate",
+    "studio": "npx prisma studio"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/figlet": "^1.5.8",
+    "prisma": "^5.14.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "figlet": "^1.7.0"
+  }
+}
